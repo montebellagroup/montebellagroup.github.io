@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Home | Monte Bella Group</title>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script> 
+            $(function(){
+                $("#header").load("header.html");  
+            });
+            
+            $(document).ready(function() {  
+                $(window).scroll(sticky_nav());
+                sticky_nav(); 
+            });
+        </script>
+    </head>
+    <body>
+        <div id='header' style='padding-bottom: 40px;'></div>
+        <h2>About Monte Bella Group</h2>
+        <p>Located in the beautiful Reno/Tahoe region (put picture(s) of mountains, Lake Tahoe on web page), the Monte Bella Group takes a long-term, systems thinking approach to projects to create solutions that reflect the triple bottom line: environment, equity, economy. We focus on strategic positioning of projects and organizations using innovative concepts and technology to best address the needs of our clients. The Monte Bella Group uses a collaborative, team approach to ensure the talent and expertise needed for our small, select group of clients is utilized. We purposefully limit the number of clients and projects in which we are engaged to produce quality results.
+        </p>
+    </body>
+  </html>

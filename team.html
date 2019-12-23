@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Team | Monte Bella Group</title>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script> 
+            $(function(){
+                $("#header").load("header.html");  
+            });
+            
+            $(document).ready(function() {  
+                $(window).scroll(sticky_nav());
+                sticky_nav(); 
+            });
+        </script>
+    </head>
+    <body>
+        <div id='header' style='padding-bottom: 40px;'></div>
+        <h2>About Monte Bella Group</h2>
+        <p>
+            As a small and selective firm, the Monte Bella Group has a very limited clientele. 
+        </p>
+    </body>
+  </html>
