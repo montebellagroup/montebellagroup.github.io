@@ -1,36 +1,79 @@
 <!DOCTYPE html>
+<html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Our Background | Monte Bella Group</title>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="stylesheet" href="main.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        <script> 
+            $(function(){
+                $("#header").load("header.html");  
+            });
+            
+            $(document).ready(function() {  
+                $(window).scroll(sticky_nav());
+                sticky_nav(); 
+            });
+        </script>
+        <style>
+            .column {
+                float: left;
+                width: 50%;
+                }
+                
+                /* Clear floats after the columns */
+                .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+        </style>
     </head>
-    <html>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="mbg_logo.png" width="40px" height="40px" class="d-inline-block" alt="">
-                monte bella group
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="https://montebellagroup.com">About</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="https://montebellagroup.com/projects.html">Projects</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://montebellagroup.com/team.html">Team</a>
-                  </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="https://montebellagroup.com/contact.html">Contact</a>
-                </li>
-              </ul>
+
+    <body>
+        <div id='header' style='padding-bottom: 40px;'></div>
+        <h2>Our Background</h2><br>
+        <p style="padding-left: 40px;">The principal and founder of the Monte Bella Group is John B. Hester, AICP. Other members are added to the team as needed depending on the project.</p><br>
+        <h3 style="padding-left: 40px;">John B. Hester, AICP</h3>
+        <p style="padding-left: 40px;">In addition to his work with the Monte Bella Group, John has had extensive public, private, and non-government organization experience in a broad range of projects:</p><br>
+        <div class="row">
+            <div class="column">
+                <h4>Public</h4>
+                <br>
+                <h4>Tahoe Regional Planning Agency </h4>
+                <p>(Created by interstate compact between California and Nevada) – Chief Operating Officer and Deputy Executive Director responsible for all operational departments including Long Range and Transportation Planning, Current Planning and Code Compliance, Environmental Improvement, and Research and Analysis.</p>
+                <br>
+                <h4>City of Reno, Nevada</h4>
+                <p>Assistant City Manager, Redevelopment Administrator, and Community Development Director.</p>
+                <br>
+                <h4>Washoe County, Nevada</h4>
+                <p>Community Development Director, Water Resources Director (Acting 1 year), Comprehensive Planning Director and Assistant Director.</p>
+                <br>
+                <h4>Ohio-Kentucky-Indiana Regional Council of Governments (Cincinnati metropolitan area)</h4>
+                <p>Regional Planning Department Regional Planner.</p>
+                <br>
+                <h4>North Central Texas Council of Governments (Dallas-Fort Worth metropolitan area) </h4>
+                <p>Research and Planning Coordination Department Planning Associate.</p>
+                <br>
+                <h4>City of Fort Worth, Texas</h4>
+                <p>Planning Department Inner City Study Urban Design Team.</p>
             </div>
-          </nav>
-          <div class=footer>montebellagroup.com  	&#9670;  105 Bret Harte Avenue, Reno, NV 89509  &#9670;  775.848.6824 </div>
-    </html>
+            <div class="column">
+                <h4>Private</h4>
+                <br>
+                <h4>Citygate Associates (Northern California based management consulting firm)</h4>
+                <p>Senior Associate conducted performance audits for local governments in California, Oregon, Utah, and Washington.</p>
+
+                <br>
+                <h4>Dunkin-Sefko Associates (Dallas based urban planning consulting firm)</h4>
+                <p>Associate responsible for development and application of a PC fiscal impact analysis system used to evaluate growth corridor, annexation, stadium expansion, and other similar proposals.</p>
+
+                <br>
+                <h4>Non-Government Organizations</h4>
+                <p>Pro-bono and paid projects ranging from a college preparatory school campus plan, to strategic planning for Keep Truckee Meadows Beautiful and the Reno-Sparks Chamber of Commerce, to facilitation for the National Commission on Libraries and Information Science.</p>
+            </div>
+        </div>
+        <br><br>
+        
+    </body>
+</html>
