@@ -15,11 +15,34 @@
                 sticky_nav(); 
             });
         </script>
+        <style>
+            .column {
+                float: left;
+                width: 50%;
+              }
+              
+              /* Clear floats after the columns */
+              .row:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+        </style>
     </head>
     <body>
         <div id='header' style='padding-bottom: 40px;'></div>
         <h2>About Monte Bella Group</h2>
-        <p>Located in the beautiful Reno/Tahoe region (put picture(s) of mountains, Lake Tahoe on web page), the Monte Bella Group takes a long-term, systems thinking approach to projects to create solutions that reflect the triple bottom line: environment, equity, economy. We focus on strategic positioning of projects and organizations using innovative concepts and technology to best address the needs of our clients. The Monte Bella Group uses a collaborative, team approach to ensure the talent and expertise needed for our small, select group of clients is utilized. We purposefully limit the number of clients and projects in which we are engaged to produce quality results.
-        </p>
+        <div class="row">
+            <div class="column">
+                <p>Located in the beautiful Reno/Tahoe region, the Monte Bella Group takes a long-term, systems thinking approach to projects to create solutions that reflect the triple bottom line: environment, equity, economy. We focus on strategic positioning of projects and organizations using innovative concepts and technology to best address the needs of our clients. The Monte Bella Group uses a collaborative, team approach to ensure the talent and expertise needed for our small, select group of clients is utilized. We purposefully limit the number of clients and projects in which we are engaged to produce quality results.
+                </p>
+            </div>
+            <div class="column">
+                <img src="img/lake.jpeg" alt="image of Lake Tahoe" style="max-width: 70%; padding-bottom: 20px;"><br>
+                <img src="img/river.jpeg" alt="image of Truckee River" style="max-width: 70%; padding-bottom: 20px;">
+            </div>
+          </div>
+          <br><br>
+        
     </body>
   </html>
