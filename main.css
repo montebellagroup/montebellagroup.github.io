@@ -27,6 +27,13 @@ h3{
     color: #65A64E;
 }
 
+h4{
+    font-family: inherit;
+    padding-left: 60px;
+    font-size: large;
+    color: #65A64E; 
+}
+
 p{
     padding-left: 60px;
     padding-right: 40px;
